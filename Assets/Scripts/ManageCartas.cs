@@ -41,7 +41,7 @@ public class ManageCartas : MonoBehaviour
             {
                 timerPausado = true;
                 timerAcionado = false;
-                if (carta1.tag == carta2.tag)
+                if (carta1.tag == carta2.tag && carta1 != carta2) // Logica esta errada. Se eu clicar duas vezes na mesma carta, ela sera destruida !!
                 {
                     Destroy(carta1);
                     Destroy(carta2);
