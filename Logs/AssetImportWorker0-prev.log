@@ -1,0 +1,667 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.3f1 (76626098c1c4) revision 7758432'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19043.1237; Version 2009; 64bit' Language: 'pt' Physical Memory: 10116 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/vazle/Documents/Unity_Projects/Lab3_Cartas
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53460
+Successfully changed project path to: C:/Users/vazle/Documents/Unity_Projects/Lab3_Cartas
+C:/Users/vazle/Documents/Unity_Projects/Lab3_Cartas
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 80.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.3f1 (76626098c1c4)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/vazle/Documents/Unity_Projects/Lab3_Cartas/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Vega 8 Graphics (ID=0x15d8)
+    Vendor:   
+    VRAM:     5058 MB
+    Driver:   26.20.14046.3
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56360
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002922 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 68.68 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.840 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001485 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 44.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.341 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.8 MB.
+System memory in use after: 84.8 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2250.
+Total: 3.364600 ms (FindLiveObjects: 0.323900 ms CreateObjectMapping: 0.088100 ms MarkObjects: 2.740100 ms  DeleteObjects: 0.211100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/New Folder
+  artifactKey: Guid(2555e9c9da8fc1448868ef8efae48e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder using Guid(2555e9c9da8fc1448868ef8efae48e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8525d70f52d472d87f09cb4e3857e223') in 0.007600 seconds
+  Import took 0.012067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.162381 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(2555e9c9da8fc1448868ef8efae48e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(2555e9c9da8fc1448868ef8efae48e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9693181f2a355264fa1f04e959ae969') in 0.003664 seconds
+  Import took 0.008575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.488855 seconds.
+  path: Assets/Prefabs/Cartas
+  artifactKey: Guid(379e9f66787ed3348b81ab78b363050f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas using Guid(379e9f66787ed3348b81ab78b363050f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec1f7c2aa5e88b8938ce4edf078c1fce') in 0.004095 seconds
+  Import took 0.011432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006452 seconds.
+  path: Assets/Prefabs/Cartas
+  artifactKey: Guid(379e9f66787ed3348b81ab78b363050f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas using Guid(379e9f66787ed3348b81ab78b363050f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec1f7c2aa5e88b8938ce4edf078c1fce') in 0.003693 seconds
+  Import took 0.008355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.087538 seconds.
+  path: Assets/Prefabs/Cartas/2_of_clubs.png
+  artifactKey: Guid(1dd237da05afa114abb853aeaebef5b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/2_of_clubs.png using Guid(1dd237da05afa114abb853aeaebef5b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01aac96220281e7af0f846bfdf8f1e7') in 0.182051 seconds
+  Import took 0.186622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Prefabs/Cartas/5_of_hearts.png
+  artifactKey: Guid(e8ef254220bfdfe4ca301743289a2b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/5_of_hearts.png using Guid(e8ef254220bfdfe4ca301743289a2b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2578afac31fe7e630f93aebf52f54a01') in 0.015572 seconds
+  Import took 0.019999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/Prefabs/Cartas/2_of_hearts.png
+  artifactKey: Guid(482ae99b46a77ba4394bb0065c42f90c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/2_of_hearts.png using Guid(482ae99b46a77ba4394bb0065c42f90c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b1fe372d6d1d69850f4d468865ad9a') in 0.014493 seconds
+  Import took 0.018888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/Prefabs/Cartas/queen_of_hearts.png
+  artifactKey: Guid(00d8f0a6b79d21a4eba695c0e67a6676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/queen_of_hearts.png using Guid(00d8f0a6b79d21a4eba695c0e67a6676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d436bf63ecf05d8b32f6c4d6a27c44') in 0.015904 seconds
+  Import took 0.020295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Prefabs/Cartas/8_of_clubs.png
+  artifactKey: Guid(616faa78f6dda0943aef39bf7ecf4837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/8_of_clubs.png using Guid(616faa78f6dda0943aef39bf7ecf4837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4516838822bec928c58b21104ef2334') in 0.014748 seconds
+  Import took 0.019431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/Prefabs/Cartas/jack_of_spades.png
+  artifactKey: Guid(4cca7f2a1e8b0ab439d931a3b8af27ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/jack_of_spades.png using Guid(4cca7f2a1e8b0ab439d931a3b8af27ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f931a0064472adcf3e690b63e044ae2') in 0.015256 seconds
+  Import took 0.019085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Prefabs/Cartas/playCardBackRed.jpg
+  artifactKey: Guid(700d63029535d6d479d7c096a724d3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/playCardBackRed.jpg using Guid(700d63029535d6d479d7c096a724d3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b95edf4f44a6a2354c10ad5b9de2af') in 0.021050 seconds
+  Import took 0.025341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000450 seconds.
+  path: Assets/Prefabs/Cartas/jack_of_diamonds.png
+  artifactKey: Guid(6662a50d5d7851c4ba761357ff9d045f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/jack_of_diamonds.png using Guid(6662a50d5d7851c4ba761357ff9d045f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01da356761e723a69573db5887b4f507') in 0.016524 seconds
+  Import took 0.020410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Prefabs/Cartas/2_of_spades.png
+  artifactKey: Guid(c32f54b4a55b72f45a0d0615c380a352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/2_of_spades.png using Guid(c32f54b4a55b72f45a0d0615c380a352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30d89dbfc519aec84dc6720381f62a67') in 0.014009 seconds
+  Import took 0.018309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Prefabs/Cartas/9_of_clubs.png
+  artifactKey: Guid(25882d894e10ce447865e230774a9587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/9_of_clubs.png using Guid(25882d894e10ce447865e230774a9587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1c8a3ded038da554a94511fa0c3313') in 0.014244 seconds
+  Import took 0.018030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/Prefabs/Cartas/6_of_hearts.png
+  artifactKey: Guid(7db0067cf712dc946955303469340263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/6_of_hearts.png using Guid(7db0067cf712dc946955303469340263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e6179601d59133150bfdddf1848127b') in 0.014813 seconds
+  Import took 0.019074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Prefabs/Cartas/5_of_clubs.png
+  artifactKey: Guid(a82175ee35c7545448d9dabb7ebd5e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/5_of_clubs.png using Guid(a82175ee35c7545448d9dabb7ebd5e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0947686aabaf203354f3170dc6e388c3') in 0.014294 seconds
+  Import took 0.018157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/Prefabs/Cartas/black_joker.png
+  artifactKey: Guid(886f711f06cc6714b88780b3e7099d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/black_joker.png using Guid(886f711f06cc6714b88780b3e7099d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec52534345c817050e0f6ed3f8287430') in 0.016314 seconds
+  Import took 0.020231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/Prefabs/Cartas/6_of_spades.png
+  artifactKey: Guid(a3c441cf2d7ac1647a0f38768bd2c82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/6_of_spades.png using Guid(a3c441cf2d7ac1647a0f38768bd2c82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35df9ce96e7b8b6a1f8b7e36da1712b8') in 0.014165 seconds
+  Import took 0.018474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Prefabs/Cartas/queen_of_diamonds2_.png
+  artifactKey: Guid(4bd43d7541548ac4fa678c1d7d995b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/queen_of_diamonds2_.png using Guid(4bd43d7541548ac4fa678c1d7d995b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c456ac99672365784a622d9e5cbd4209') in 0.015620 seconds
+  Import took 0.019577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/Prefabs/Cartas/10_of_diamonds.png
+  artifactKey: Guid(b11908c668945174b91dcbc2d537b6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/10_of_diamonds.png using Guid(b11908c668945174b91dcbc2d537b6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd42c9d5a54760fcac79b23da35075385') in 0.015999 seconds
+  Import took 0.020410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Prefabs/Cartas/jack_of_clubs.png
+  artifactKey: Guid(80e5f9da9cb35464b848fe502aaf2133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/jack_of_clubs.png using Guid(80e5f9da9cb35464b848fe502aaf2133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77d5c7c9ba4fd23a29cf8504ed91e6de') in 0.017847 seconds
+  Import took 0.023034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000586 seconds.
+  path: Assets/Prefabs/Cartas/2_of_diamonds.png
+  artifactKey: Guid(4e210d638cb468c4f835d365eb486e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/2_of_diamonds.png using Guid(4e210d638cb468c4f835d365eb486e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddd9b9bb45451d333efc4fcf6987ea13') in 0.017134 seconds
+  Import took 0.021994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Prefabs/Cartas/red_joker.png
+  artifactKey: Guid(64e5c962d8f8ddd44950eb20e2d328a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/red_joker.png using Guid(64e5c962d8f8ddd44950eb20e2d328a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7341c4b21c7b97791875339384620f05') in 0.022999 seconds
+  Import took 0.027470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Prefabs/Cartas/king_of_diamonds2_.png
+  artifactKey: Guid(52f863dcd311e034080050eab65688a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/king_of_diamonds2_.png using Guid(52f863dcd311e034080050eab65688a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1806b2adb8f6f19fb41c871b6017d4') in 0.013829 seconds
+  Import took 0.017679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Prefabs/Cartas/8_of_diamonds.png
+  artifactKey: Guid(0bc8197db56d04c4f9ee12bcc1c0f6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/8_of_diamonds.png using Guid(0bc8197db56d04c4f9ee12bcc1c0f6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8524034feb81dd53ef62f5461664edf2') in 0.013636 seconds
+  Import took 0.017784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000499 seconds.
+  path: Assets/Prefabs/Cartas/ace_of_diamonds.png
+  artifactKey: Guid(11781416ce27b9c4aa6f2c2283a5641f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/ace_of_diamonds.png using Guid(11781416ce27b9c4aa6f2c2283a5641f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87507cb9e138944071709bbbae8bc7bb') in 0.013732 seconds
+  Import took 0.018062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Prefabs/Cartas/king_of_diamonds.png
+  artifactKey: Guid(b9a0f56ce3d6ea3459a44af785a0b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/king_of_diamonds.png using Guid(b9a0f56ce3d6ea3459a44af785a0b955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '518e298bfba345dd5d1716e2655f4bc0') in 0.016361 seconds
+  Import took 0.020637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000534 seconds.
+  path: Assets/Prefabs/Cartas/3_of_spades.png
+  artifactKey: Guid(c58c25e82dff7ec4493cce318fc15e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/3_of_spades.png using Guid(c58c25e82dff7ec4493cce318fc15e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53f44e6a3f05a685bff41d23d509e595') in 0.015734 seconds
+  Import took 0.020352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Prefabs/Cartas/jack_of_spades2_.png
+  artifactKey: Guid(9053981d752e7f24c846e1bfa3cfe621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/jack_of_spades2_.png using Guid(9053981d752e7f24c846e1bfa3cfe621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447e1b778262a1c66536969990d20110') in 0.013866 seconds
+  Import took 0.018323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/Prefabs/Cartas/queen_of_spades.png
+  artifactKey: Guid(2dc9e7cd2ced0684ba6a528455f3888a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/queen_of_spades.png using Guid(2dc9e7cd2ced0684ba6a528455f3888a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d17e24481a79754242df1900bb9ba59') in 0.014516 seconds
+  Import took 0.018616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/Prefabs/Cartas/8_of_spades.png
+  artifactKey: Guid(1f76e2e8295fa4548bf243f7fdddb128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/8_of_spades.png using Guid(1f76e2e8295fa4548bf243f7fdddb128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa720b201418cd2e66fe5e5202470b9') in 0.014120 seconds
+  Import took 0.017978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Prefabs/Cartas/4_of_hearts.png
+  artifactKey: Guid(aa0ac1c684e89064db3b8be8f5e147b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/4_of_hearts.png using Guid(aa0ac1c684e89064db3b8be8f5e147b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658e80b5ca7209e3bccbdb18295bb48d') in 0.013391 seconds
+  Import took 0.017385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Prefabs/Cartas/8_of_hearts.png
+  artifactKey: Guid(23f418aaae50d9f44ae6f9a28fd1ae74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/8_of_hearts.png using Guid(23f418aaae50d9f44ae6f9a28fd1ae74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cc687e6cc0c9ef1bd6dec23b26c90c2') in 0.014600 seconds
+  Import took 0.018838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Prefabs/Cartas/jack_of_hearts.png
+  artifactKey: Guid(a96a95bcffefb5044b395cdb0080b1dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/jack_of_hearts.png using Guid(a96a95bcffefb5044b395cdb0080b1dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c924480fd7ae067ee8e1a5d6859f9c2') in 0.014091 seconds
+  Import took 0.017795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000477 seconds.
+  path: Assets/Prefabs/Cartas/5_of_diamonds.png
+  artifactKey: Guid(57499ac5520649541a529af652f048cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/5_of_diamonds.png using Guid(57499ac5520649541a529af652f048cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b054b46a1bbc6bed1b90e1004991567') in 0.013946 seconds
+  Import took 0.018547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000589 seconds.
+  path: Assets/Prefabs/Cartas/4_of_clubs.png
+  artifactKey: Guid(9bf5fd6dd3bf84d47a621cf852ed7dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/4_of_clubs.png using Guid(9bf5fd6dd3bf84d47a621cf852ed7dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f00ff75dfd5a86ac51e415e2a877a832') in 0.013526 seconds
+  Import took 0.017541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/Prefabs/Cartas/jack_of_hearts2_.png
+  artifactKey: Guid(2da73644b3d58654eba5e8f4acb4f5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/jack_of_hearts2_.png using Guid(2da73644b3d58654eba5e8f4acb4f5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f13a0eaf9dbc72cf262949714db7ecf6') in 0.014660 seconds
+  Import took 0.018848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Prefabs/Cartas/9_of_hearts.png
+  artifactKey: Guid(d5d452cf1401acb40a9b8ebea637b67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/9_of_hearts.png using Guid(d5d452cf1401acb40a9b8ebea637b67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4789cf5c7c8ef0b73e256397d2b882df') in 0.019371 seconds
+  Import took 0.023065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/Prefabs/Cartas/7_of_spades.png
+  artifactKey: Guid(2774503810978fe41a596d3758a4afbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/7_of_spades.png using Guid(2774503810978fe41a596d3758a4afbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02bdd255ba13c708cc77d16bd107d53b') in 0.014979 seconds
+  Import took 0.019275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Prefabs/Cartas/king_of_hearts.png
+  artifactKey: Guid(9f90f079c3125694d80f9e48a6478c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/king_of_hearts.png using Guid(9f90f079c3125694d80f9e48a6478c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9095d182c307b4a46cb6915db602a4f') in 0.019229 seconds
+  Import took 0.026921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Prefabs/Cartas/4_of_diamonds.png
+  artifactKey: Guid(c8c7d303503dca04cadae2053be43038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/4_of_diamonds.png using Guid(c8c7d303503dca04cadae2053be43038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5fde41e473a2410e23902d62ab2c57') in 0.016910 seconds
+  Import took 0.020950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Prefabs/Cartas/4_of_spades.png
+  artifactKey: Guid(e9cfef962ff6ad6478ab117d7d14fffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/4_of_spades.png using Guid(e9cfef962ff6ad6478ab117d7d14fffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc37c6f8ce1f1ccc0985db6eda423d43') in 0.016211 seconds
+  Import took 0.020158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Prefabs/Cartas/3_of_clubs.png
+  artifactKey: Guid(28f1a9f1986d7ef4596b39fbb7fc28f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/3_of_clubs.png using Guid(28f1a9f1986d7ef4596b39fbb7fc28f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935d7e0f04f0953d16da4a83716e9dd1') in 0.013315 seconds
+  Import took 0.017407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000490 seconds.
+  path: Assets/Prefabs/Cartas/queen_of_hearts2_.png
+  artifactKey: Guid(a4eec2da65545a44db65b50aca31e4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/queen_of_hearts2_.png using Guid(a4eec2da65545a44db65b50aca31e4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '856c3a55f7c3d05d0f68089b5b9c7942') in 0.015161 seconds
+  Import took 0.019430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Prefabs/Cartas/10_of_hearts.png
+  artifactKey: Guid(1427430171f18854cb745106470527de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/10_of_hearts.png using Guid(1427430171f18854cb745106470527de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7605950d656fd34f7e424fdc6259d15b') in 0.015439 seconds
+  Import took 0.019555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/Prefabs/Cartas/queen_of_clubs2_.png
+  artifactKey: Guid(abacb4f0575ed724fb31edba1af160b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/queen_of_clubs2_.png using Guid(abacb4f0575ed724fb31edba1af160b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3db33fa42b57e3c20226620d66ca04') in 0.015291 seconds
+  Import took 0.019746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/Prefabs/Cartas/ace_of_clubs.png
+  artifactKey: Guid(4a7548dfa20167949b3875d96e47d3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/ace_of_clubs.png using Guid(4a7548dfa20167949b3875d96e47d3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05aec8de4f0cc09e60b2ac08e9f6e7eb') in 0.014613 seconds
+  Import took 0.018847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/Prefabs/Cartas/ace_of_spades2_.png
+  artifactKey: Guid(f31bd92f98d13fb43b96f6f546f9511f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/ace_of_spades2_.png using Guid(f31bd92f98d13fb43b96f6f546f9511f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5cc7947df4f570a5564153d6867a774') in 0.013909 seconds
+  Import took 0.017825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Prefabs/Cartas/5_of_spades.png
+  artifactKey: Guid(22c41fc91672d2c4fad9337e159ef1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/5_of_spades.png using Guid(22c41fc91672d2c4fad9337e159ef1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3dbb0fb1430c93a39e67cf581c0a2d') in 0.017250 seconds
+  Import took 0.021686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Prefabs/Cartas/9_of_diamonds.png
+  artifactKey: Guid(e3a50ca22f6c97641bd9b6f76b531a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/9_of_diamonds.png using Guid(e3a50ca22f6c97641bd9b6f76b531a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51277e004647b748a7f2e442d7dc8854') in 0.013891 seconds
+  Import took 0.018157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/Prefabs/Cartas/king_of_clubs.png
+  artifactKey: Guid(b40ae8cd78aadd2459a9d0fcccf6bb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/king_of_clubs.png using Guid(b40ae8cd78aadd2459a9d0fcccf6bb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b8abe3021372aa65286d62f47e55ed') in 0.014195 seconds
+  Import took 0.018454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Prefabs/Cartas/queen_of_clubs.png
+  artifactKey: Guid(c0fb2e35a7dd6f847b1deb2ad9ea5276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/queen_of_clubs.png using Guid(c0fb2e35a7dd6f847b1deb2ad9ea5276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00f550ecdc11c086fe36d6ac26e4ec63') in 0.015758 seconds
+  Import took 0.020090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/Prefabs/Cartas/king_of_clubs2_.png
+  artifactKey: Guid(6d92e6ee70667eb4b9008070b23a170e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/king_of_clubs2_.png using Guid(6d92e6ee70667eb4b9008070b23a170e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27921124560fd9a949d9741c46ddf12d') in 0.013063 seconds
+  Import took 0.017257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/Prefabs/Cartas/queen_of_spades2_.png
+  artifactKey: Guid(0a3a8b08a47c2d547a8a9b6d1564a8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/queen_of_spades2_.png using Guid(0a3a8b08a47c2d547a8a9b6d1564a8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20ad46c3c4f17b5dc03c44406d61d27') in 0.013795 seconds
+  Import took 0.017727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/Prefabs/Cartas/jack_of_clubs2_.png
+  artifactKey: Guid(8495407277763c24499de3207ff82d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/jack_of_clubs2_.png using Guid(8495407277763c24499de3207ff82d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d1d7128a613420f5bf4e3934e31794') in 0.016694 seconds
+  Import took 0.020874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Prefabs/Cartas/6_of_diamonds.png
+  artifactKey: Guid(22b4d42923e21f0428a4f0cd1de1e19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/6_of_diamonds.png using Guid(22b4d42923e21f0428a4f0cd1de1e19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487fb9d5c375e63a3e3a6b82c428dabb') in 0.015697 seconds
+  Import took 0.019509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Prefabs/Cartas/3_of_diamonds.png
+  artifactKey: Guid(1b8140817be47dd4f8802e36fdce6079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/3_of_diamonds.png using Guid(1b8140817be47dd4f8802e36fdce6079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a374dddc34ba9b23b1c7737423597764') in 0.015111 seconds
+  Import took 0.018722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Prefabs/Cartas/7_of_clubs.png
+  artifactKey: Guid(1f785b65e4c34d949bac2802b438b6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/7_of_clubs.png using Guid(1f785b65e4c34d949bac2802b438b6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd661992738d644a6b221756cd799900e') in 0.017953 seconds
+  Import took 0.022525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/Prefabs/Cartas/10_of_spades.png
+  artifactKey: Guid(27c597b2a23a8dc4cade334d8bd2ecda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/10_of_spades.png using Guid(27c597b2a23a8dc4cade334d8bd2ecda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed7108350b81fc4ec40fa64842f43992') in 0.014347 seconds
+  Import took 0.019457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Prefabs/Cartas/7_of_hearts.png
+  artifactKey: Guid(f44ddb8fb45dc6946978044376f28ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/7_of_hearts.png using Guid(f44ddb8fb45dc6946978044376f28ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c115cfffd8c7e117465cc2f1344b5cee') in 0.014157 seconds
+  Import took 0.019299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/Prefabs/Cartas/king_of_spades2_.png
+  artifactKey: Guid(21b7ec9c06776224d8fe6782bcf7c917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/king_of_spades2_.png using Guid(21b7ec9c06776224d8fe6782bcf7c917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25dec43a75342da1d8ae7643a08b73d2') in 0.018382 seconds
+  Import took 0.022348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Prefabs/Cartas/10_of_clubs.png
+  artifactKey: Guid(9170cbd337c095d4bb8943060b5d1cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/10_of_clubs.png using Guid(9170cbd337c095d4bb8943060b5d1cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '917cd3652a79e5c85a3d8b782c229137') in 0.013408 seconds
+  Import took 0.017401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/Prefabs/Cartas/king_of_hearts2_.png
+  artifactKey: Guid(2b5580800f04a3c459ee8eb76d67d143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/king_of_hearts2_.png using Guid(2b5580800f04a3c459ee8eb76d67d143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80463d5a951cd917462cf6264e404fcd') in 0.016286 seconds
+  Import took 0.020718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Prefabs/Cartas/6_of_clubs.png
+  artifactKey: Guid(695191f69c51e31459a28fe0c47500a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/6_of_clubs.png using Guid(695191f69c51e31459a28fe0c47500a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fecedc7c93de50727e17c8a58d78be3') in 0.013800 seconds
+  Import took 0.018241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/Prefabs/Cartas/9_of_spades.png
+  artifactKey: Guid(f9276eee4900fde498e56b7e39711ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/9_of_spades.png using Guid(f9276eee4900fde498e56b7e39711ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '900e13d101a3bce43d7145ae947e854e') in 0.018831 seconds
+  Import took 0.024928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000511 seconds.
+  path: Assets/Prefabs/Cartas/7_of_diamonds.png
+  artifactKey: Guid(2e0ebdb71f79f30439e5bce72a8382ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/7_of_diamonds.png using Guid(2e0ebdb71f79f30439e5bce72a8382ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4525b98aa22ee00cb3c143459c986628') in 0.025745 seconds
+  Import took 0.032135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000517 seconds.
+  path: Assets/Prefabs/Cartas/playCardBackBlue.jpg
+  artifactKey: Guid(c1bf28fb7b20a4d40a035b38753d103d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/playCardBackBlue.jpg using Guid(c1bf28fb7b20a4d40a035b38753d103d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c33373f26c66f0861cc10b3c866d79') in 0.033200 seconds
+  Import took 0.040068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000471 seconds.
+  path: Assets/Prefabs/Cartas/king_of_spades.png
+  artifactKey: Guid(981babc03654d16449c261e11802855a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/king_of_spades.png using Guid(981babc03654d16449c261e11802855a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'febd1d660fb6df0d126998dc5da1d6f3') in 0.021417 seconds
+  Import took 0.026609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/Prefabs/Cartas/3_of_hearts.png
+  artifactKey: Guid(d43c26746a308014da7fdc17c4486750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/3_of_hearts.png using Guid(d43c26746a308014da7fdc17c4486750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80906dbcc03fa5912d62e9160e48d75d') in 0.024214 seconds
+  Import took 0.032847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Prefabs/Cartas/ace_of_spades.png
+  artifactKey: Guid(8c77a70d5f1f97445b3c7780a20a240a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/ace_of_spades.png using Guid(8c77a70d5f1f97445b3c7780a20a240a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78287aabb1d2dc70b89865e85413c89e') in 0.024166 seconds
+  Import took 0.029149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000443 seconds.
+  path: Assets/Prefabs/Cartas/back_of_card.png
+  artifactKey: Guid(af29ae0f6d8cd614ea44584f7adc91f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/back_of_card.png using Guid(af29ae0f6d8cd614ea44584f7adc91f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ef4ee0714ac128a50cbe61d335212d') in 0.028673 seconds
+  Import took 0.034552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000560 seconds.
+  path: Assets/Prefabs/Cartas/queen_of_diamonds.png
+  artifactKey: Guid(a4343f1fd289b59469c64af468e15d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/queen_of_diamonds.png using Guid(a4343f1fd289b59469c64af468e15d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c5d12a98dda75f6a46416c51f501b6') in 0.024598 seconds
+  Import took 0.030626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000524 seconds.
+  path: Assets/Prefabs/Cartas/jack_of_diamonds2_.png
+  artifactKey: Guid(ddbeef0462a77fb4fbbfe872e17eb7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/jack_of_diamonds2_.png using Guid(ddbeef0462a77fb4fbbfe872e17eb7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ae70e44603f4dbbf5246ae740803fb') in 0.024442 seconds
+  Import took 0.030114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/Prefabs/Cartas/ace_of_hearts.png
+  artifactKey: Guid(98ade26651658184abeb4095907acbb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cartas/ace_of_hearts.png using Guid(98ade26651658184abeb4095907acbb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da7e25e0a5dcfbb37638271b6ab3b360') in 0.015565 seconds
+  Import took 0.020574 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
