@@ -206,7 +206,7 @@ public class ManageCartas : MonoBehaviour
     }
       void upDateScore()
     {
-        GameObject.Find("score").GetComponent<Text>().text = "score = " + score;
+        GameObject.Find("score").GetComponent<Text>().text = "Score = " + score;
         PlayerPrefs.SetInt("score", 0); // to tentando salvar o score aqui testando
     }
 
