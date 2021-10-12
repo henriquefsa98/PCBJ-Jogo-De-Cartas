@@ -17,14 +17,16 @@ public class ManageCartas : MonoBehaviour
     int numAcertos = 0;         // numero de match de pares acertados
     AudioSource somOK;      // som de acerto
     int ultimoJogo = 0;
+    int score = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         MostraCartas();
         UpDateTentativas();
+        upDateScore();
         somOK = GetComponent<AudioSource>();
-        ultimoJogo = PlayerPrefs.GetInt("Jogadas", 0);      
+        ultimoJogo = PlayerPrefs.GetInt("Jogadas", 0);   
         GameObject.Find("ultimaJogada").GetComponent<Text>().text = "Jogo Anterior = " + ultimoJogo;  
     }
 
@@ -48,7 +50,7 @@ public class ManageCartas : MonoBehaviour
                     if (numAcertos == 13)
                     {
                         PlayerPrefs.SetInt("Jogadas", numTentativas);
-                        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                        SceneManager.LoadScene("end"); //aqui coloquei par quando chegar no numero de acertos igual a 13 ele abrir a tela de end
                     }
                         
                 }
@@ -65,7 +67,15 @@ public class ManageCartas : MonoBehaviour
                 linhaCarta2 = "";
                 timer = 0;
             }
+            //if (scorenovo < scoremaximo)  A IDEIA É CRIAR UM SCORE SALVAR O MAXIMO DELE , E FAZER A LOGICA AQUI 
+        {
+                
+          // SceneManager.LoadScene("menu"); AI AQUI SE CRIA UMA CENA COM A TELA DE CAMPEAO 
         }
+
+
+        }
+        
     }
 
     void MostraCartas()
@@ -128,6 +138,7 @@ public class ManageCartas : MonoBehaviour
         else
             numeroCarta = "" + (valor+1); 
         
+        
         nomeDaCarta = numeroCarta + "_of_clubs";
         Sprite s1 = (Sprite)(Resources.Load<Sprite>(nomeDaCarta));
         print("S1: " + s1);
@@ -177,7 +188,10 @@ public class ManageCartas : MonoBehaviour
     {
         DisparaTimer();
         numTentativas++;
+        score++;
         UpDateTentativas();
+        upDateScore();
+
     }
 
     public void DisparaTimer()
@@ -190,4 +204,11 @@ public class ManageCartas : MonoBehaviour
     {
         GameObject.Find("numTentativas").GetComponent<Text>().text = "Tentativas = " + numTentativas;
     }
+      void upDateScore()
+    {
+        GameObject.Find("score").GetComponent<Text>().text = "score = " + score;
+        PlayerPrefs.SetInt("score", 0); // to tentando salvar o score aqui testando
+    }
+
+
 }
