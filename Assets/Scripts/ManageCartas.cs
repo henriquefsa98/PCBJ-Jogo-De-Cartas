@@ -41,11 +41,14 @@ public class ManageCartas : MonoBehaviour
             {
                 timerPausado = true;
                 timerAcionado = false;
-                if (carta1.tag == carta2.tag && carta1 != carta2) // Logica esta errada. Se eu clicar duas vezes na mesma carta, ela sera destruida !!
+                if (carta1.tag == carta2.tag && carta1 != carta2) // Logica esta errada. Se eu clicar duas vezes na mesma carta, ela sera destruida !! Concertei!
                 {
                     Destroy(carta1);
                     Destroy(carta2);
                     numAcertos++;
+                    score++;                 // Faltava aumentar o score qndo o player encontrar um par
+                    upDateScore();           // Adcionado chama de func upDateScore para atualizar score qndo jogado encontra um par
+                    Debug.Log("Encontrou um par!");
                     somOK.Play();
                     if (numAcertos == 13)
                     {
@@ -188,7 +191,7 @@ public class ManageCartas : MonoBehaviour
     {
         DisparaTimer();
         numTentativas++;
-        score++;
+        //score++;             // logica errada, so deve aumentar o score qndo acertar o par
         UpDateTentativas();
         upDateScore();
 
