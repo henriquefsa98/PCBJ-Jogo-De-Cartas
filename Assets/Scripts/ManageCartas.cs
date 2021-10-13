@@ -18,11 +18,25 @@ public class ManageCartas : MonoBehaviour
     AudioSource somOK;      // som de acerto
     int ultimoJogo = 0;
     int score = 0;
+    int gameMode;
+
+    string [] naipesVermelhos = new string [] {"_of_hearts", "_of_diamonds"};
+    string [] naipesPretos = new string [] {"_of_spades", "_of_clubs"};
+    string [] todosNaipes = new string [] {"_of_diamonds","_of_spades", "_of_hearts", "_of_clubs"};
+
+    int indexNaipe = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        MostraCartas();
+        Debug.Log("Modo de jogo: "+ PlayerPrefs.GetInt("gameMode"));
+
+        gameMode = PlayerPrefs.GetInt("gameMode");
+
+        if (gameMode < 2)
+            MostraCartas();
+        else
+            MostraTodasCartas();
         UpDateTentativas();
         upDateScore();
         somOK = GetComponent<AudioSource>();
@@ -97,6 +111,28 @@ public class ManageCartas : MonoBehaviour
             AddUmaCarta(1, i, ArrayEmbaralhado2[i]);
         }
     }
+
+    void MostraTodasCartas()
+    {
+        int[] ArrayEmbaralhado = criaArrayEmbaralhado();
+        int[] ArrayEmbaralhado2 = criaArrayEmbaralhado();
+        int[] ArrayEmbaralhado3 = criaArrayEmbaralhado();
+        int[] ArrayEmbaralhado4 = criaArrayEmbaralhado();
+
+        // Instantiate(carta, new Vector3(0, 0, 0), Quaternion.identity);
+        // AddUmaCarta();
+
+        for (int i = 0; i < 13; i++)
+        {
+            // AddUmaCarta(i);
+            // AddUmaCarta(i, ArrayEmbaralhado[i]);
+            AddUmaCarta(2, i, ArrayEmbaralhado[i]);
+            AddUmaCarta(1, i, ArrayEmbaralhado2[i]);
+            AddUmaCarta(0, i, ArrayEmbaralhado3[i]);
+            AddUmaCarta(-1, i, ArrayEmbaralhado4[i]);
+
+        }
+    }
     void AddUmaCarta(int linha, int rank, int valor)
     {
         GameObject centro = GameObject.Find("centroDaTela");
@@ -141,8 +177,28 @@ public class ManageCartas : MonoBehaviour
         else
             numeroCarta = "" + (valor+1); 
         
-        
-        nomeDaCarta = numeroCarta + "_of_clubs";
+        if (gameMode == 0)
+        {
+            nomeDaCarta = numeroCarta + naipesPretos[indexNaipe];
+            indexNaipe++;
+            if(indexNaipe >= 2)
+                indexNaipe = 0;
+        }
+        else if(gameMode == 1)
+        {
+            nomeDaCarta = numeroCarta + naipesVermelhos[indexNaipe];
+            indexNaipe++;
+            if(indexNaipe >= 2)
+                indexNaipe = 0;
+        }
+        else
+        {
+            nomeDaCarta = numeroCarta + todosNaipes[indexNaipe];
+            indexNaipe++;
+            if(indexNaipe >= 4)
+                indexNaipe = 0;
+        }
+
         Sprite s1 = (Sprite)(Resources.Load<Sprite>(nomeDaCarta));
         print("S1: " + s1);
         // GameObject.Find("" + rank).GetComponent<Tile>().setCartaOriginal(s1);
