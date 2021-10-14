@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class ManageCartas : MonoBehaviour
 {
     public GameObject carta;        // a carta a ser descartada
+    public GameObject azul;
     private bool primeiraCartaSelecionada, segundaCartaSelecionada;         // indicadores para cada escolhida em cada linha
     private GameObject carta1, carta2;      // gameObjects da 1ª 2 ª carta selecionada
     private string linhaCarta1, linhaCarta2;        // linha da carta selecionada
@@ -72,7 +73,7 @@ public class ManageCartas : MonoBehaviour
                     if (numAcertos == 13)
                     {
                         PlayerPrefs.SetInt("Jogadas", numTentativas);
-                        SceneManager.LoadScene("end"); //aqui coloquei par quando chegar no numero de acertos igual a 13 ele abrir a tela de end
+                        SceneManager.LoadScene("end"); //aqui coloquei para quando chegar no numero de acertos igual a 13 ele abrir a tela de end
                     }
                         
                 }
@@ -192,16 +193,20 @@ public class ManageCartas : MonoBehaviour
         GameObject centro = GameObject.Find("centroDaTela");
         float escalaCartaOriginal = carta.transform.localScale.x;
         float fatorEscalaX = (650*escalaCartaOriginal)/110.0f;
-        float fatorEscalaY = (945*escalaCartaOriginal)/110.0f;
+        float fatorEscalaY   = (945*escalaCartaOriginal)/110.0f;
 
         Vector3 novaPosicao;
-
-        // Vector3 novaPosicao = new Vector3(centro.transform.position.x + ((rank-13/2)*1.3f), centro.transform.position.y, centro.transform.position.z);
-        // Vector3 novaPosicao = new Vector3(centro.transform.position.x + ((rank-13/2) * fatorEscalaX), centro.transform.position.y, centro.transform.position.z);
+       // Vector3 novaPosicaoo;
+        
+        
+        //novaPosicaoo = new Vector3(centro.transform.position.x + ((rank-13/2) * fatorEscalaX), centro.transform.position.y, centro.transform.position.z);
+        //novaPosicao = new Vector3(centro.transform.position.x, centro.transform.position.y+ ((rank-13/2) * fatorEscalaY), centro.transform.position.z);
         
         if(gameMode != 3)
         {
+                
             novaPosicao = new Vector3(centro.transform.position.x + ((rank-13/2) * fatorEscalaX), centro.transform.position.y + ((linha-2/2) * fatorEscalaY), centro.transform.position.z);
+            
         }
         else
         {
@@ -210,15 +215,19 @@ public class ManageCartas : MonoBehaviour
         
         // GameObject c = (GameObject)(Instantiate(carta, new Vector3(0, 0, 0), Quaternion.identity));
         // GameObject c = (GameObject)(Instantiate(carta, new Vector3(rank*1.5f, 0, 0), Quaternion.identity));
+
+
         GameObject c = (GameObject)(Instantiate(carta, novaPosicao, Quaternion.identity));
+       // GameObject a = (GameObject)(Instantiate(azul, novaPosicaoo, Quaternion.identity)); // cartas azuis
 
         if(gameMode != 3)
         {
             c.tag = "" + (valor+1);
             c.name = "" + linha + "_" + valor;
-        }
+           
+        }                                                                                                                                               
         else
-        {
+        {   
 
             c.tag = survivor[indexSurvivor];
             // c.name = "" + valor;
