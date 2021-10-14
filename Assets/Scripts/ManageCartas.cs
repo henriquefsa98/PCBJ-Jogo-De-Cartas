@@ -20,14 +20,14 @@ public class ManageCartas : MonoBehaviour
     int score = 0;
     int gameMode;
 
-    string [] naipesVermelhos = new string [] {"_of_hearts", "_of_diamonds"};
-    string [] naipesPretos = new string [] {"_of_spades", "_of_clubs"};
-    string [] todosNaipes = new string [] {"_of_diamonds","_of_spades", "_of_hearts", "_of_clubs"};
+    string [] naipesVermelhos = new string [] {"_of_hearts", "_of_diamonds"};       // aqui é um arrray dos naipes vermelhos
+    string [] naipesPretos = new string [] {"_of_spades", "_of_clubs"};         // aqui é um array dos naipes pretos
+    string [] todosNaipes = new string [] {"_of_diamonds","_of_spades", "_of_hearts", "_of_clubs"}; // aqui é um array de todas as cartas de todos os naipes
 
     int indexNaipe = 0;
 
     // Start is called before the first frame update
-    void Start()
+    void Start() // função que inicializa o jogo
     {
         Debug.Log("Modo de jogo: "+ PlayerPrefs.GetInt("gameMode"));
 
@@ -45,7 +45,7 @@ public class ManageCartas : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() // função que da update no jogo a cada frame
     {
         if (timerAcionado)
         {
@@ -73,7 +73,7 @@ public class ManageCartas : MonoBehaviour
                 }
                 else
                 {
-                    carta1.GetComponent<Tile>().EscondeCarta(); 
+                    carta1.GetComponent<Tile>().EscondeCarta(); // aqui caso o jogador erre em achar a "carta-par" esconde as cartas
                     carta2.GetComponent<Tile>().EscondeCarta();
                 }
                 primeiraCartaSelecionada = false;
@@ -97,8 +97,8 @@ public class ManageCartas : MonoBehaviour
 
     void MostraCartas()
     {
-        int[] ArrayEmbaralhado = criaArrayEmbaralhado();
-        int[] ArrayEmbaralhado2 = criaArrayEmbaralhado();
+        int[] ArrayEmbaralhado = criaArrayEmbaralhado(); // aqui cria-se dois arrays para auxiliar
+        int[] ArrayEmbaralhado2 = criaArrayEmbaralhado(); // ao embaralhar as cartas
 
         // Instantiate(carta, new Vector3(0, 0, 0), Quaternion.identity);
         // AddUmaCarta();
@@ -114,8 +114,8 @@ public class ManageCartas : MonoBehaviour
 
     void MostraTodasCartas()
     {
-        int[] ArrayEmbaralhado = criaArrayEmbaralhado();
-        int[] ArrayEmbaralhado2 = criaArrayEmbaralhado();
+        int[] ArrayEmbaralhado = criaArrayEmbaralhado();    // novamente, aqui cria-se dois arrays para auxiliar
+        int[] ArrayEmbaralhado2 = criaArrayEmbaralhado();   // ao embaralhar as cartas
         int[] ArrayEmbaralhado3 = criaArrayEmbaralhado();
         int[] ArrayEmbaralhado4 = criaArrayEmbaralhado();
 
@@ -177,7 +177,7 @@ public class ManageCartas : MonoBehaviour
         else
             numeroCarta = "" + (valor+1); 
         
-        if (gameMode == 0)
+        if (gameMode == 0)              // nesta parte, funciona o menu de opções e seus respectivos modos de jogo
         {
             nomeDaCarta = numeroCarta + naipesPretos[indexNaipe];
             indexNaipe++;
@@ -253,21 +253,22 @@ public class ManageCartas : MonoBehaviour
 
     }
 
-    public void DisparaTimer()
+    public void DisparaTimer()      // função booleana responsavel por controlar o timer
     {
         timerPausado = false;
         timerAcionado = true;
     }
 
-    void UpDateTentativas()
+    void UpDateTentativas()         // função que atualiza o frame das tentativas
     {
         GameObject.Find("numTentativas").GetComponent<Text>().text = "Tentativas = " + numTentativas;
     }
-      void upDateScore()
+      void upDateScore()            // função que atualiza o frame do score
     {
         GameObject.Find("score").GetComponent<Text>().text = "Score = " + score;
         PlayerPrefs.SetInt("score", 0); // to tentando salvar o score aqui testando
     }
 
+    
 
 }
