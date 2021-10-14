@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carta: {fileID: 4553858963438898205, guid: 17945b0c0cc142b4d80c803ee4ad09df, type: 3}
+  azul: {fileID: 4553858963438898205, guid: 694c909d8d4cd074c8e7a0423d464a8f, type: 3}
 --- !u!4 &75725297
 Transform:
   m_ObjectHideFlags: 0
@@ -482,7 +483,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.20572266, g: 0.6509434, b: 0.20907517, a: 0}
+  m_BackGroundColor: {r: 0, g: 0.4716981, b: 0.081391044, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -719,8 +720,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: 330}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 370, y: -240}
+  m_SizeDelta: {x: 150, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1020465704
 MonoBehaviour:

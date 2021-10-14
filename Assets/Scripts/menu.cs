@@ -60,6 +60,12 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene("Jogo Sobrevivencia");
     }
 
+    public void StartDiffNaipes()
+    {
+        PlayerPrefs.SetInt("gameMode", 4);
+        SceneManager.LoadScene("Lab3");
+    }
+
     // Update is called once per frame
     void Update()        // função responsável por atualizar frame a frame por jogo  
     {
