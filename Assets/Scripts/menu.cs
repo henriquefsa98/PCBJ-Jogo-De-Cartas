@@ -17,6 +17,31 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene("Lab3");
     }
 
+    public void RestartGame()             // função responsável por reinicializar o jogo
+    {
+        int gm = PlayerPrefs.GetInt("gameMode");
+        if(gm != 3)
+            SceneManager.LoadScene("Lab3");
+        else
+            SceneManager.LoadScene("Jogo Sobrevivencia");
+    }
+
+    public void StartMenu()             // função responsável por inicialiar o menu
+    {
+        
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void QuitGame()             // função responsável por fechar o jogo
+    {
+        Debug.Log("Fechando o jogo, obrigado por jogar! :D ");
+
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+            Application.Quit();              
+    }
+
     public void StartRedGame()              // função responsável por inicialiar o jogo com o modo de game só com as vermelhas
     {
         PlayerPrefs.SetInt("gameMode", 1);
@@ -27,6 +52,12 @@ public class menu : MonoBehaviour
     {
         PlayerPrefs.SetInt("gameMode", 2);
         SceneManager.LoadScene("Lab3");
+    }
+
+    public void StartSurvivorGame()              // função responsável por inicialiar o jogo Sobrevivência!
+    {
+        PlayerPrefs.SetInt("gameMode", 3);
+        SceneManager.LoadScene("Jogo Sobrevivencia");
     }
 
     // Update is called once per frame

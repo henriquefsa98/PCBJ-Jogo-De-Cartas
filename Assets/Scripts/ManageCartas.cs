@@ -24,6 +24,10 @@ public class ManageCartas : MonoBehaviour
     string [] naipesPretos = new string [] {"_of_spades", "_of_clubs"};         // aqui é um array dos naipes pretos
     string [] todosNaipes = new string [] {"_of_diamonds","_of_spades", "_of_hearts", "_of_clubs"}; // aqui é um array de todas as cartas de todos os naipes
 
+    string [] survivor = new string [] {"PD", "P"};   // aqui é um array com todos os animais do Sobrevivencia 
+    int indexSurvivor = 0;
+
+
     int indexNaipe = 0;
 
     // Start is called before the first frame update
@@ -33,10 +37,11 @@ public class ManageCartas : MonoBehaviour
 
         gameMode = PlayerPrefs.GetInt("gameMode");
 
-        if (gameMode < 2)
+        if (gameMode < 2 || gameMode == 3)
             MostraCartas();
         else
             MostraTodasCartas();
+
         UpDateTentativas();
         upDateScore();
         somOK = GetComponent<AudioSource>();
@@ -55,7 +60,7 @@ public class ManageCartas : MonoBehaviour
             {
                 timerPausado = true;
                 timerAcionado = false;
-                if (carta1.tag == carta2.tag && carta1 != carta2) // Logica esta errada. Se eu clicar duas vezes na mesma carta, ela sera destruida !! Concertei!
+                if (carta1.tag == carta2.tag && carta1 != carta2 && gameMode != 3) // Logica que verifica se o player selecionou duas cartas com a mesma tag
                 {
                     Destroy(carta1);
                     Destroy(carta2);
@@ -70,6 +75,40 @@ public class ManageCartas : MonoBehaviour
                         SceneManager.LoadScene("end"); //aqui coloquei par quando chegar no numero de acertos igual a 13 ele abrir a tela de end
                     }
                         
+                }
+                else if(gameMode == 3 && carta1.tag != carta2.tag)  // Logicas para o game Sobrevivencia!
+                {
+                    if(carta1.tag != carta2.tag)   // ganha ponto por achar par predador/presa
+                    {
+                        Destroy(carta1);
+                        Destroy(carta2);
+                        numAcertos++;
+                        score++;                 
+                        upDateScore();           
+                        Debug.Log("Encontrou um par Predador/Presa!");
+                        somOK.Play();
+                        if (numAcertos == 6)   // Finaliza o game se alcançar 6 pontos no Sobrevivencia!
+                        {
+                            PlayerPrefs.SetInt("Jogadas", numTentativas);
+                            SceneManager.LoadScene("end"); 
+                        }
+                    }
+                    else if (carta1.tag == "predador")
+                    {
+                        Destroy(carta1);
+                        Destroy(carta2);
+                        numAcertos--;
+                        score--;                 
+                        upDateScore();           
+                        Debug.Log("Encontrou um par Predador/Predador!");
+                        somOK.Play();
+                        
+                    }
+                    else
+                    {
+                        carta1.GetComponent<Tile>().EscondeCarta(); // aqui caso o jogador achar duas presas as cartas sao viradas e não é alterado o score
+                        carta2.GetComponent<Tile>().EscondeCarta();
+                    }
                 }
                 else
                 {
@@ -97,19 +136,34 @@ public class ManageCartas : MonoBehaviour
 
     void MostraCartas()
     {
-        int[] ArrayEmbaralhado = criaArrayEmbaralhado(); // aqui cria-se dois arrays para auxiliar
-        int[] ArrayEmbaralhado2 = criaArrayEmbaralhado(); // ao embaralhar as cartas
-
-        // Instantiate(carta, new Vector3(0, 0, 0), Quaternion.identity);
-        // AddUmaCarta();
-
-        for (int i = 0; i < 13; i++)
+        if(gameMode != 3)
         {
-            // AddUmaCarta(i);
-            // AddUmaCarta(i, ArrayEmbaralhado[i]);
-            AddUmaCarta(0, i, ArrayEmbaralhado[i]);
-            AddUmaCarta(1, i, ArrayEmbaralhado2[i]);
+            int[] ArrayEmbaralhado = criaArrayEmbaralhado(); // aqui cria-se dois arrays para auxiliar
+            int[] ArrayEmbaralhado2 = criaArrayEmbaralhado(); // ao embaralhar as cartas
+
+            for (int i = 0; i < 13; i++)
+            {
+                // AddUmaCarta(i);
+                // AddUmaCarta(i, ArrayEmbaralhado[i]);
+                AddUmaCarta(0, i, ArrayEmbaralhado[i]);
+                AddUmaCarta(1, i, ArrayEmbaralhado2[i]);
+            }
+
         }
+        else
+        {
+            int[] ArrayEmbaralhado = criaArrayEmbaralhadoSobrevivencia(); // Mesma coisa que o de cima, mas para o jogo Sobrevivencia
+            int[] ArrayEmbaralhado2 = criaArrayEmbaralhadoSobrevivencia();
+
+            for (int i = 0; i < 9; i++)
+            {
+                // AddUmaCarta(i);
+                // AddUmaCarta(i, ArrayEmbaralhado[i]);
+                AddUmaCarta(0, i, ArrayEmbaralhado[i]);
+                AddUmaCarta(1, i, ArrayEmbaralhado2[i]);
+            }
+        }
+        
     }
 
     void MostraTodasCartas()
@@ -140,17 +194,40 @@ public class ManageCartas : MonoBehaviour
         float fatorEscalaX = (650*escalaCartaOriginal)/110.0f;
         float fatorEscalaY = (945*escalaCartaOriginal)/110.0f;
 
+        Vector3 novaPosicao;
+
         // Vector3 novaPosicao = new Vector3(centro.transform.position.x + ((rank-13/2)*1.3f), centro.transform.position.y, centro.transform.position.z);
         // Vector3 novaPosicao = new Vector3(centro.transform.position.x + ((rank-13/2) * fatorEscalaX), centro.transform.position.y, centro.transform.position.z);
-        Vector3 novaPosicao = new Vector3(centro.transform.position.x + ((rank-13/2) * fatorEscalaX), centro.transform.position.y + ((linha-2/2) * fatorEscalaY), centro.transform.position.z);
-
+        
+        if(gameMode != 3)
+        {
+            novaPosicao = new Vector3(centro.transform.position.x + ((rank-13/2) * fatorEscalaX), centro.transform.position.y + ((linha-2/2) * fatorEscalaY), centro.transform.position.z);
+        }
+        else
+        {
+            novaPosicao = new Vector3(centro.transform.position.x + ((rank-9/2) * fatorEscalaX), centro.transform.position.y + ((linha-2/2) * fatorEscalaY), centro.transform.position.z);
+        }
+        
         // GameObject c = (GameObject)(Instantiate(carta, new Vector3(0, 0, 0), Quaternion.identity));
         // GameObject c = (GameObject)(Instantiate(carta, new Vector3(rank*1.5f, 0, 0), Quaternion.identity));
         GameObject c = (GameObject)(Instantiate(carta, novaPosicao, Quaternion.identity));
 
-        c.tag = "" + (valor+1);
-        // c.name = "" + valor;
-        c.name = "" + linha + "_" + valor;
+        if(gameMode != 3)
+        {
+            c.tag = "" + (valor+1);
+            c.name = "" + linha + "_" + valor;
+        }
+        else
+        {
+
+            c.tag = survivor[indexSurvivor];
+            // c.name = "" + valor;
+            c.name = survivor[indexSurvivor] + "_" + linha + "_" + valor;
+
+            Debug.Log("Nome do C: " + valor + " = " + c.name);
+        }
+
+        
                 
         string nomeDaCarta = "";
         string numeroCarta = "";
@@ -191,19 +268,35 @@ public class ManageCartas : MonoBehaviour
             if(indexNaipe >= 2)
                 indexNaipe = 0;
         }
-        else
+        else if(gameMode == 2)
         {
             nomeDaCarta = numeroCarta + todosNaipes[indexNaipe];
             indexNaipe++;
             if(indexNaipe >= 4)
                 indexNaipe = 0;
         }
+        else
+        {
+            nomeDaCarta = survivor[indexSurvivor] + (valor+1);
+            Debug.Log("Nome da carta: "+ nomeDaCarta);
+            indexSurvivor++;
+            if(indexSurvivor >= 2)
+                indexSurvivor = 0;
+        }
 
         Sprite s1 = (Sprite)(Resources.Load<Sprite>(nomeDaCarta));
         print("S1: " + s1);
         // GameObject.Find("" + rank).GetComponent<Tile>().setCartaOriginal(s1);
         // GameObject.Find("" + valor).GetComponent<Tile>().setCartaOriginal(s1);
-        GameObject.Find("" + linha + "_" + valor).GetComponent<Tile>().setCartaOriginal(s1);
+        if(gameMode != 3)
+        {
+            GameObject.Find("" + linha + "_" + valor).GetComponent<Tile>().setCartaOriginal(s1);
+        }
+        else
+        {
+            GameObject.Find(c.name).GetComponent<Tile>().setCartaOriginal(s1);
+        }
+        
     }
 
     public int[] criaArrayEmbaralhado()
@@ -215,6 +308,22 @@ public class ManageCartas : MonoBehaviour
         {
             temp = novoArray[t];
             int r = Random.Range(t, 13);
+            novoArray[t] = novoArray[r];
+            novoArray[r] = temp;
+        }
+
+        return novoArray;
+    }
+
+    public int[] criaArrayEmbaralhadoSobrevivencia()
+    {
+        int[] novoArray = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int temp;
+
+        for (int t = 0; t < 9; t++)
+        {
+            temp = novoArray[t];
+            int r = Random.Range(t, 9);
             novoArray[t] = novoArray[r];
             novoArray[r] = temp;
         }
@@ -247,7 +356,7 @@ public class ManageCartas : MonoBehaviour
     {
         DisparaTimer();
         numTentativas++;
-        //score++;             // logica errada, so deve aumentar o score qndo acertar o par
+        //score++;             
         UpDateTentativas();
         upDateScore();
 
@@ -266,7 +375,7 @@ public class ManageCartas : MonoBehaviour
       void upDateScore()            // função que atualiza o frame do score
     {
         GameObject.Find("score").GetComponent<Text>().text = "Score = " + score;
-        PlayerPrefs.SetInt("score", 0); // to tentando salvar o score aqui testando
+        PlayerPrefs.SetInt("score", 0); 
     }
 
     
