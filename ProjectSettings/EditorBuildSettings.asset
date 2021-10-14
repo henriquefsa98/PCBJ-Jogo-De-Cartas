@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Lab3.unity
     guid: e7a45350ca97fa44ab059c7a073c7265
   - enabled: 1
+    path: Assets/Scenes/Jogo Sobrevivencia.unity
+    guid: 4444b7dfa451a8242a8db54a42924a0d
+  - enabled: 1
     path: Assets/Scenes/end.unity
     guid: 5016889d55b089d499ba81247e5e41af
   - enabled: 0
