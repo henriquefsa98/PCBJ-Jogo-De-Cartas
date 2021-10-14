@@ -23,12 +23,12 @@ public class ManageCartas : MonoBehaviour
 
     string [] naipesVermelhos = new string [] {"_of_hearts", "_of_diamonds"};       // aqui é um arrray dos naipes vermelhos
     string [] naipesPretos = new string [] {"_of_spades", "_of_clubs"};         // aqui é um array dos naipes pretos
-    string [] todosNaipes = new string [] {"_of_diamonds","_of_spades", "_of_hearts", "_of_clubs"}; // aqui é um array de todas as cartas de todos os naipes
+    string [] todosNaipes = new string [] {"_of_diamonds","_of_spades", "_of_hearts", "_of_clubs"};     // aqui é um array de todas as cartas de todos os naipes
+    string [] diffNaipes = new string [] {"_of_hearts", "_of_hearts"};           // aqui é um array de mesmo naipe de diferentes baralhos
 
     string [] survivor = new string [] {"PD", "P"};   // aqui é um array com todos os animais do Sobrevivencia 
+
     int indexSurvivor = 0;
-
-
     int indexNaipe = 0;
 
     // Start is called before the first frame update
@@ -38,7 +38,7 @@ public class ManageCartas : MonoBehaviour
 
         gameMode = PlayerPrefs.GetInt("gameMode");
 
-        if (gameMode < 2 || gameMode == 3)
+        if (gameMode < 2 || gameMode == 3 || gameMode == 4)
             MostraCartas();
         else
             MostraTodasCartas();
@@ -137,7 +137,20 @@ public class ManageCartas : MonoBehaviour
 
     void MostraCartas()
     {
-        if(gameMode != 3)
+        if(gameMode == 4)
+        {
+            int[] ArrayEmbaralhado = criaArrayEmbaralhadoDiffNaipes(); // cria-se dois arrays para embaralhas as cartas
+            int[] ArrayEmbaralhado2 = criaArrayEmbaralhadoDiffNaipes();
+
+            for (int i = 0; i < 13; i++)
+            {
+                // AddUmaCarta(i);
+                // AddUmaCarta(i, ArrayEmbaralhado[i]);
+                AddUmaCarta(0, i, ArrayEmbaralhado[i]);
+                AddUmaCarta(1, i, ArrayEmbaralhado2[i]);
+            }
+        }
+        else if(gameMode != 3)
         {
             int[] ArrayEmbaralhado = criaArrayEmbaralhado(); // aqui cria-se dois arrays para auxiliar
             int[] ArrayEmbaralhado2 = criaArrayEmbaralhado(); // ao embaralhar as cartas
@@ -201,7 +214,7 @@ public class ManageCartas : MonoBehaviour
         
         //novaPosicaoo = new Vector3(centro.transform.position.x + ((rank-13/2) * fatorEscalaX), centro.transform.position.y, centro.transform.position.z);
         //novaPosicao = new Vector3(centro.transform.position.x, centro.transform.position.y+ ((rank-13/2) * fatorEscalaY), centro.transform.position.z);
-        
+                
         if(gameMode != 3)
         {
                 
@@ -215,10 +228,9 @@ public class ManageCartas : MonoBehaviour
         
         // GameObject c = (GameObject)(Instantiate(carta, new Vector3(0, 0, 0), Quaternion.identity));
         // GameObject c = (GameObject)(Instantiate(carta, new Vector3(rank*1.5f, 0, 0), Quaternion.identity));
-
-
+        
         GameObject c = (GameObject)(Instantiate(carta, novaPosicao, Quaternion.identity));
-       // GameObject a = (GameObject)(Instantiate(azul, novaPosicaoo, Quaternion.identity)); // cartas azuis
+        // GameObject a = (GameObject)(Instantiate(azul, novaPosicao, Quaternion.identity)); // cartas azuis
 
         if(gameMode != 3)
         {
@@ -284,6 +296,14 @@ public class ManageCartas : MonoBehaviour
             if(indexNaipe >= 4)
                 indexNaipe = 0;
         }
+        else if(gameMode == 4)
+        {
+            nomeDaCarta = numeroCarta + diffNaipes[indexNaipe];
+            indexNaipe++;
+            if(indexNaipe >= 2)
+                indexNaipe = 0;
+        }
+        
         else
         {
             nomeDaCarta = survivor[indexSurvivor] + (valor+1);
@@ -340,6 +360,22 @@ public class ManageCartas : MonoBehaviour
         return novoArray;
     }
 
+    public int[] criaArrayEmbaralhadoDiffNaipes()
+    {
+        int[] novoArray = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+        int temp;
+
+        for (int t = 0; t < 13; t++)
+        {
+            temp = novoArray[t];
+            int r = Random.Range(t, 13);
+            novoArray[t] = novoArray[r];
+            novoArray[r] = temp;
+        }
+
+        return novoArray;
+    }
+    
     public void CartaSelecionada(GameObject carta)
     {
         if (!primeiraCartaSelecionada)
